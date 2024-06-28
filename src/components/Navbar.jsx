@@ -61,11 +61,11 @@ const Navbar = () => {
 
 
   return (
-    <div className='bg-[#262D34] flex items-center justify-center l:py-5 py-2 flex-wrap'>
+    <div className='bg-[#262D34] flex items-center justify-center l:py-5 py-3 flex-wrap'>
       <Image className="lg:inline hidden" src={Logo}/>
 
       <div className=' lg:ml-[84px]'>
-        <ul className='flex items-center lg:gap-5'>
+        <ul className='flex items-center lg:gap-5 gap-2'>
           <li className='flex items-center justify-center transition-all duration-700 '>
             <NavLink
               to="/"
@@ -80,7 +80,7 @@ const Navbar = () => {
             <NavLink
               to="/calender"
               className={({ isActive }) => 
-                `p-[10px] leading-[21.6px] text-[#fff] transition-all duration-300 relative rounded-md ${isActive ? 'bg-[#FF4400]' : 'bg-transparent'}`
+                `lg:p-[10px] p-1 leading-[21.6px] text-[#fff] transition-all duration-300 relative rounded-md ${isActive ? 'bg-[#FF4400]' : 'bg-transparent'}`
               }
             >
               <BiCalendarWeek className='w-5 h-5 text-white'/>
@@ -90,7 +90,7 @@ const Navbar = () => {
             <NavLink
               to="/groups"
               className={({ isActive }) => 
-                `p-[10px] leading-[21.6px] text-[#fff] transition-all duration-300 relative rounded-md ${isActive ? 'bg-[#FF4400]' : 'bg-transparent'}`
+                `lg:p-[10px] p-1 leading-[21.6px] text-[#fff] transition-all duration-300 relative rounded-md ${isActive ? 'bg-[#FF4400]' : 'bg-transparent'}`
               }
             >
               <MdOutlineGroups2 className='w-5 h-5 text-white'/>
@@ -100,7 +100,7 @@ const Navbar = () => {
             <NavLink
               to="/podcast"
               className={({ isActive }) => 
-                `p-[10px] leading-[21.6px] text-[#fff] transition-all duration-300 relative rounded-md ${isActive ? 'bg-[#FF4400]' : 'bg-transparent'}`
+                `lg:p-[10px] p-1 leading-[21.6px] text-[#fff] transition-all duration-300 relative rounded-md ${isActive ? 'bg-[#FF4400]' : 'bg-transparent'}`
               }
             >
               <PiApplePodcastsLogoDuotone className='w-5 h-5 text-white'/>
@@ -110,7 +110,7 @@ const Navbar = () => {
             <NavLink
               to="/Interviews"
               className={({ isActive }) => 
-                `p-[10px] leading-[21.6px] text-[#fff] transition-all duration-300 relative rounded-md ${isActive ? 'bg-[#FF4400]' : 'bg-transparent'}`
+                `lg:p-[10px] p-1 leading-[21.6px] text-[#fff] transition-all duration-300 relative rounded-md ${isActive ? 'bg-[#FF4400]' : 'bg-transparent'}`
               }
             >
               <BsMic className='w-5 h-5 text-white'/>
@@ -119,7 +119,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="flex lg:w-[440px] w-[150px]  lg:ml-5 rounded bg-[#2c353d]">
+      <div className="flex lg:w-[440px] w-[100px]  lg:ml-5 ml-16 rounded bg-[#2c353d]">
         <input className=" w-full border-none bg-transparent lg:px-5 px-1 lg:py-[10px] py-1 text-white outline-none" name="search" placeholder="Type here to search..." />
         <button type="submit" className="m-2 rounded lg:px-4 px-0 lg:py-2">
           <CiSearch className=' text-[#838ead] font-bold w-5 h-5 flex justify-center items-center'/>
