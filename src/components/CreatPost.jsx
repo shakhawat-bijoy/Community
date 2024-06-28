@@ -4,7 +4,7 @@ import Memoji1 from '/Memoji1.png'
 
 const CreatPost = () => {
   return (
-    <div className='lg:w-[785px] w-[335px] flex items-center gap-5 bg-[#262d34] lg:p-5 p-2 rounded-lg mx-auto'>
+    <div className='lg:w-[785px] w-[350px] flex items-center gap-5 bg-[#262d34] lg:p-5 p-2 rounded-lg mx-auto'>
         <div>
             <Image src={Memoji1}/>
         </div>
