@@ -152,7 +152,7 @@ const Navbar = () => {
         
         <li className='flex items-center justify-center transition-all duration-700 '>
           <NavLink
-            to="/@"
+            to="/"
             className={({ isActive }) => 
               `p-[10px] leading-[21.6px] text-[#fff] transition-all duration-300 relative rounded-md ${isActive ? 'bg-[#93d1fe]' : 'bg-transparent'}`
             }
