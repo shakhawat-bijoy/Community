@@ -51,7 +51,7 @@ const generatePosts = (numPosts) => {
   return posts;
 };
 
-const postsData = generatePosts(500);
+const postsData = generatePosts(100);
 
 const Posts = () => {
   const [likedPosts, setLikedPosts] = useState({});
