@@ -14,7 +14,7 @@ const Home = () => {
     <div className='bg-[#1e242a]'>
       <Container className="flex gap-x-5 py-5">
 
-        <div className='flex flex-col gap-5'>
+        <div className='lg:flex flex-col gap-5 hidden'>
             <Sidebar/>
             <PopularTags/>
             <PinnedGroup/>
@@ -26,7 +26,7 @@ const Home = () => {
           <Posts/>
         </div>
 
-        <div className='flex flex-col gap-5'>
+        <div className='lg:flex flex-col gap-5 hidden'>
           <Meetups/>
           <PodcastsRightBar/>
         </div>

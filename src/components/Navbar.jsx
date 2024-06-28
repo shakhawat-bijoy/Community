@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   const MessagePopup = () => (
-    <div className="absolute top-full right-0 mt-2 w-64 bg-white rounded-md shadow-lg">
+    <div className="absolute top-full lg:right-0 mt-2 w-64 bg-white rounded-md shadow-lg">
       <div className="p-4">
         <h3 className="text-lg font-semibold mb-2">Messages</h3>
         <p>You have no new messages.</p>
@@ -45,7 +45,7 @@ const Navbar = () => {
     ];
 
     return (
-      <div className="absolute top-full right-0 mt-2 w-80 bg-white rounded-md shadow-lg max-h-96 overflow-y-auto">
+      <div className="absolute top-full lg:right-0 left-15 mt-2 w-80  bg-white rounded-md shadow-lg max-h-96 overflow-y-auto">
         <div className="p-4">
           <h3 className="text-lg font-semibold mb-2">Notifications</h3>
           {notifications.map((notification) => (
@@ -61,16 +61,16 @@ const Navbar = () => {
 
 
   return (
-    <div className='bg-[#262D34] flex items-center justify-center py-5'>
-      <Image src={Logo}/>
+    <div className='bg-[#262D34] flex items-center justify-center l:py-5 py-2 flex-wrap'>
+      <Image className="lg:inline hidden" src={Logo}/>
 
-      <div className='ml-[84px]'>
-        <ul className='flex items-center gap-5'>
+      <div className=' lg:ml-[84px]'>
+        <ul className='flex items-center lg:gap-5'>
           <li className='flex items-center justify-center transition-all duration-700 '>
             <NavLink
               to="/"
               className={({ isActive }) => 
-                `p-[10px] leading-[21.6px] text-[#fff] transition-all duration-300 relative rounded-md ${isActive ? 'bg-[#FF4400]' : 'bg-transparent'}`
+                `lg:p-[10px] p-1 leading-[21.6px] text-[#fff] transition-all duration-300 relative rounded-md ${isActive ? 'bg-[#FF4400]' : 'bg-transparent'}`
               }
             >
               <IoMdHome className='w-5 h-5 text-white'/>
@@ -119,9 +119,9 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="flex w-[440px] ml-5 rounded bg-[#2c353d]">
-        <input className=" w-full border-none bg-transparent px-5 py-[10px] text-white outline-none focus:outline-none " name="search" placeholder="Type here to search..." />
-        <button type="submit" className="m-2 rounded px-4 py-2">
+      <div className="flex lg:w-[440px] w-[150px]  lg:ml-5 rounded bg-[#2c353d]">
+        <input className=" w-full border-none bg-transparent lg:px-5 px-1 lg:py-[10px] py-1 text-white outline-none" name="search" placeholder="Type here to search..." />
+        <button type="submit" className="m-2 rounded lg:px-4 px-0 lg:py-2">
           <CiSearch className=' text-[#838ead] font-bold w-5 h-5 flex justify-center items-center'/>
         </button>
       </div>
@@ -129,7 +129,7 @@ const Navbar = () => {
 
 
 
-      <ul className='flex items-center gap-[25px] ml-[58px]'>
+      <ul className='flex items-center lg:gap-[25px] gap-2 lg:ml-[58px] mt-2 lg:mt-0'>
         <li className='Messege flex items-center justify-center transition-all duration-700 relative'>
           <button
             onClick={() => togglePopup('message')}
@@ -162,7 +162,7 @@ const Navbar = () => {
         </li>  
       </ul>   
 
-      <div className="relative inline-flex ml-4">
+      <div className="relative lg:inline-flex ml-4 hidden">
         <svg className="w-2 h-1 absolute top-0 right-0 m-4 font-bold pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 412 232"><path d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z" fill="#fff" fill-rule="nonzero"/></svg>
         <select className="text-white font-bold h-8 pl-5 pr-5 bg-transparent bg-[#262D34] focus:outline-none appearance-none cursor-pointer">
           <option className='bg-[#262D34]'>AR. Jakir</option>
