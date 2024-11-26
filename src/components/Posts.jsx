@@ -51,7 +51,7 @@ const generatePosts = (numPosts) => {
   return posts;
 };
 
-const postsData = generatePosts(100);
+const postsData = generatePosts(30);
 
 const Posts = () => {
   const [likedPosts, setLikedPosts] = useState({});
@@ -85,7 +85,8 @@ const Posts = () => {
                 />
               ))}
             </div>
-            <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center'>
+
+            <div className='flex flex-col sm:flex-row justify-between items-baseline sm:items-center'>
               <div className='flex items-center mb-2 sm:mb-0'>
                 <Image src={post.memoji} alt="Memoji" className="w-8 h-8" />
                 <div className='ml-2'>
